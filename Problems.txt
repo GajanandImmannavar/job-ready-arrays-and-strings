@@ -1,0 +1,48 @@
+Problems Every Fresher Must Solve 100%
+If you can solve these without looking at solutions, you are interview-ready for most fresher coding rounds:
+Arrays
+
+1. Largest Element
+2. Second Largest
+3. Reverse Array
+4. Remove Duplicates
+5. Move Zeros
+6. Missing Number
+7. Two Sum
+8. Majority Element
+9. Kadane Algorithm
+10. Stock Buy Sell
+11. Merge Intervals
+12. Product Except Self
+13. Subarray Sum K
+14. Longest Consecutive Sequence
+15. Binary Search
+
+
+Strings
+
+
+1. Reverse String
+2. Palindrome
+3. Character Frequency
+4. First Non-Repeating Character
+5. Anagram
+6. Longest Common Prefix
+7. Longest Substring Without Repeating Characters
+8. Valid Parentheses
+9. Reverse Words
+10. Group Anagrams
+11. Longest Palindromic Substring
+
+
+30-Day DSA Goal
+Week 1
+- Arrays (1–15)
+Week 2
+- Strings (1–20)
+Week 3
+- HashMap + Two Pointers + Sliding Window
+Week 4
+- Binary Search + Stack + Interview Mock Problems
+If you're targeting fresher roles in 2026, I would prioritize:
+Arrays → Strings → HashMap → Two Pointers → Sliding Window → Binary Search → Stack
