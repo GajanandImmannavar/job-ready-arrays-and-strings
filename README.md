@@ -1,17 +1,3 @@
-If you want a repository focused **only on Arrays and Strings**, make it look focused and purposeful rather than incomplete.
-
-### Repository Name
-```text
-job-ready-arrays-and-strings
-```
-
-### GitHub Description
-```text
-A curated collection of frequently asked Array and String coding interview problems for fresher software engineering placements. Includes optimized Python solutions, explanations, and problem-solving patterns commonly asked in coding assessments and technical interviews.
-```
-
-### README Title
-
 # 🚀 Job Ready Arrays and Strings for Freshers
 
 This repository contains the most important Array and String problems frequently asked in fresher software engineering interviews and coding assessments.
