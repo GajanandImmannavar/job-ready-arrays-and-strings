@@ -92,27 +92,64 @@
 
 // Move Zeros
 
+// #include <stdio.h>
+
+// int main()
+// {   int arr[5]={0,0,1,2,3};
+//     int left = arr[0];
+//     for(int right = 0; right<5; right++)
+//     {
+//         if(arr[right]!=0)
+//         {
+//             int temp;
+//             temp = arr[left];
+//             arr[left] = arr[right];
+//             arr[right] = temp;
+//             left++;
+//         }
+//     }
+
+//     for(int i=0; i<5; i++)
+//     {
+//         printf("%d ",arr[i]);
+//     }
+//     printf("\n");
+//     return 0;
+// }
+
+
 #include <stdio.h>
+#include <stdbool.h>
 
 int main()
-{   int arr[5]={0,0,1,2,3};
-    int left = arr[0];
-    for(int right = 0; right<5; right++)
+{
+    int arr[10]={1,2,3,4,5,5,5,5,5,6};
+    
+    for(int i=0; i<9; i++)
     {
-        if(arr[right]!=0)
+        bool duplicate = false;
+        if(arr[i]==arr[i+1])
         {
-            int temp;
-            temp = arr[left];
-            arr[left] = arr[right];
-            arr[right] = temp;
-            left++;
+            continue;
         }
+         
+             printf("%d ",arr[i]);
     }
 
-    for(int i=0; i<5; i++)
-    {
-        printf("%d ",arr[i]);
-    }
+    printf("%d ",arr[10-1]);
+    
     printf("\n");
+    return 0;
+}
+
+// Using Your Boolean + break + continue Idea (Unsorted Array)
+
+
+#include <stdio.h>
+#include <stdbool.h>
+
+int main()
+{
+    
     return 0;
 }
