@@ -123,9 +123,9 @@
 
 int main()
 {
-    int arr[10]={1,2,3,4,5,5,5,5,5,6};
+    int arr[11]={1,2,3,4,5,5,5,5,5,6,7};
     
-    for(int i=0; i<9; i++)
+    for(int i=0; i<10; i++)
     {
         bool duplicate = false;
         if(arr[i]==arr[i+1])
@@ -136,7 +136,7 @@ int main()
              printf("%d ",arr[i]);
     }
 
-    printf("%d ",arr[10-1]);
+    printf("%d ",arr[11-1]);
     
     printf("\n");
     return 0;
@@ -145,11 +145,30 @@ int main()
 // Using Your Boolean + break + continue Idea (Unsorted Array)
 
 
-#include <stdio.h>
-#include <stdbool.h>
+// #include <stdio.h>
+// #include <stdbool.h>
 
-int main()
-{
-    
-    return 0;
-}
+// int main()
+// {
+//     int arr[]={1,3,2,4,1,6};
+//     int n = sizeof(arr)/ sizeof(arr[0]);
+//     for(int i=0; i<n;i++)
+//     {
+//         bool duplicates = false;
+//         for(int j=0; j<i;j++)
+//         {
+//             if(arr[i]==arr[j])
+//             {
+//               duplicates = true;
+//               break;
+//             }
+//         }
+//         if(duplicates)
+//         {
+//             continue;
+//         }
+//         printf("%d ",arr[i]);
+//     }
+//     printf("\n");
+//     return 0;
+// }
