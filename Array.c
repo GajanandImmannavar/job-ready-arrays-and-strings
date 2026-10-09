@@ -117,30 +117,30 @@
 //     return 0;
 // }
 
+// duplicate removing and printing unique
+// #include <stdio.h>
+// #include <stdbool.h>
 
-#include <stdio.h>
-#include <stdbool.h>
-
-int main()
-{
-    int arr[11]={1,2,3,4,5,5,5,5,5,6,7};
+// int main()
+// {
+//     int arr[11]={1,2,3,4,5,5,5,5,5,6,7};
     
-    for(int i=0; i<10; i++)
-    {
-        bool duplicate = false;
-        if(arr[i]==arr[i+1])
-        {
-            continue;
-        }
+//     for(int i=0; i<10; i++)
+//     {
+//         bool duplicate = false;
+//         if(arr[i]==arr[i+1])
+//         {
+//             continue;
+//         }
          
-             printf("%d ",arr[i]);
-    }
+//              printf("%d ",arr[i]);
+//     }
 
-    printf("%d ",arr[11-1]);
+//     printf("%d ",arr[11-1]);
     
-    printf("\n");
-    return 0;
-}
+//     printf("\n");
+//     return 0;
+// }
 
 // Using Your Boolean + break + continue Idea (Unsorted Array)
 
@@ -167,6 +167,100 @@ int main()
 //         {
 //             continue;
 //         }
+//         printf("%d ",arr[i]);
+//     }
+//     printf("\n");
+//     return 0;
+// }
+
+
+
+
+// #include <stdio.h>
+
+// int main()
+// {
+//     int arr[10]={1,2,3,4,5,6,7,8,9,10};
+//     int target = 8;
+//     int left = 0;
+//     int right = 10-1;
+
+//     while(left<right)
+//     {
+//       if(arr[left]+arr[right]==target)
+//       {
+//         printf("{%d,%d}",arr[left],arr[right]);
+//         left++;
+//         right++;
+//       }
+//       else if(arr[left]+arr[right]<target)
+//       {
+//         left++;
+//       }
+//       else
+//       {
+//          right--;
+//       }
+//     }
+//     printf("\n");
+//     return 0;
+// }
+
+
+
+
+//  Rotate array Using temp if we have k = 1;
+
+// #include <stdio.h>
+
+// int main()
+// {
+//     int arr[5]={0,1,2,3,4};
+  
+//     for(int i=0; i<4; i++)
+//     {
+//         int temp = arr[i];
+//         arr[i] = arr[i+1];
+//         arr[i+1]=temp;
+        
+//     }
+
+//     for(int i=0; i<5; i++)
+//     {
+//         printf("%d ",arr[i]);
+//     }
+//     printf("\n");
+//     return 0;
+// }
+
+
+//  k = 2;
+
+
+// #include <stdio.h>
+
+// int main()
+// {
+//     int arr[10]={0,1,2,3,4,5,6,7,8,9};
+//     int k=3;
+//     printf("Befor Rotate\n");
+//     for(int i =0; i<10; i++)
+//     {
+//         printf("%d ",arr[i]);
+//     }
+//     printf("\n");
+//     for(int j=0; j<k; j++)
+//     {
+//         for(int i=0; i<9; i++)
+//         {
+//             int temp = arr[i];
+//             arr[i]= arr[i+1];
+//             arr[i+1]= temp;
+//         }
+//     }
+//     printf("After rotate K is %d\n",k);
+//     for(int i=0; i<10; i++)
+//     {
 //         printf("%d ",arr[i]);
 //     }
 //     printf("\n");
