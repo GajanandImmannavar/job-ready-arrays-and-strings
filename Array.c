@@ -266,3 +266,34 @@
 //     printf("\n");
 //     return 0;
 // }
+
+//  Majority Element
+
+// #include <stdio.h>
+
+// int main()
+// {
+//     int arr[10]={0,1,1,1,1,2,3,4,1,1};
+//     int n= 10;
+//     int free[10]={0};
+//     bool found = false;
+
+//     for(int i=0; i<n; i++)
+//     {
+//        free[arr[i]]++;
+//     }
+//     for(int i=0; i<n; i++)
+//     {
+//         if(free[i]>n/2)
+//         {
+//             printf("%d\n",i);
+//             found = true; 
+//             break;           
+//         }
+//     }
+//     if(!found)
+//     {
+//         printf("Not found\n");
+//     }
+//     return 0;
+// }
