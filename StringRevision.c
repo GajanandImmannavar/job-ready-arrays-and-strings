@@ -292,9 +292,6 @@
 
 
 
-// Check Whether a String Is a Palindrome
-
-
 
 
 
@@ -302,26 +299,303 @@
 // Count vowels using a different approach
 
 
-#include <stdio.h>
+// #include <stdio.h>
 
-int main()
-{
-    char str[]="Gajanand";
-    char vowel[]="AEIOUaeiou";
-    int count=0;
+// int main()
+// {
+//     char str[]="Gajanand";
+//     char vowel[]="AEIOUaeiou";
+//     int count=0;
 
-    for(int i=0; str[i]!='\0';i++)
-    {
-        for(int j=0; vowel[j]!='\0';j++)
-        {
-            if(str[i]==vowel[j])
-            {
-                 count++;
-                 break;
-            }
-        }
-    }
+//     for(int i=0; str[i]!='\0';i++)
+//     {
+//         for(int j=0; vowel[j]!='\0';j++)
+//         {
+//             if(str[i]==vowel[j])
+//             {
+//                  count++;
+//                  break;
+//             }
+//         }
+//     }
 
-    printf("%d\n",count);
-    return 0;
-}
+//     printf("%d\n",count);
+//     return 0;
+// }
+
+
+
+
+// Check Whether a String Is a Palindrome
+
+
+// #include <stdio.h>
+
+// int main()
+// {
+//     char str[]="Madam";
+//     int flag = 0;
+//     int n=0;
+    
+//     while(str[n]!='\0')
+//     {
+//         n++;
+//     }
+//     char left = 0;
+//     char right = n-1;
+
+//     for(int i=0; i<n/2; i++)
+//     {
+//         if(str[left]!=str[right])
+//         {
+//               flag =1;
+//               break;
+//         }
+//         left++;
+//         right--;
+//     }
+//     if(flag==1)
+//     {
+//         printf("Not palli\n");
+//     }
+//     else
+//     {
+//         printf("Palligram\n");
+//     }
+//     return 0;
+// }
+
+
+
+// #include <stdio.h>
+
+// #include <stdbool.h>
+
+
+// int main()
+// {
+//     char str[]="madaM";
+//     int n =0;
+//     bool bollean = true;
+
+//     while(str[n]!='\0')
+//     {
+//         n++;
+//     }
+//     for(int i=0; i<n/2; i++)
+//     {
+//         if(str[i]!=str[n-1-i])
+//         {
+//             bollean = false;
+//             break;
+//         }
+//     }
+
+//     if(bollean)
+//     {
+//         printf("Pallindrom\n");
+//     }
+//     else
+//     {
+//         printf("Not palli\n");
+//     }
+//     return 0;
+// }
+
+
+// Reverse a string using two pointers and while
+
+// #include <stdio.h>
+
+// int main()
+// {
+//     char str[]="Level";
+//     int n =0;
+//     while(str[n]!='\0')
+//     {
+//         n++;
+//     }
+//     char left =0;
+//     char right = n-1;
+//     for(int i=0; i<n/2; i++)
+//     {
+//         char temp = str[left];
+//         str[left] = str[right];
+//         str[right] = temp;
+//            left++;
+//            right--;
+//     }
+ 
+//     printf("%s\n",str);
+//     return 0;
+// }
+
+// Reverse word using temp
+// #include <stdio.h>
+
+// int main()
+// {
+//     char str[]="Gajanand";
+//     int n=0; 
+//     while(str[n]!='\0')
+//     {
+//         n++;
+//     }
+//     for(int i=0; i<n/2; i++)
+//     {
+//         char temp = str[i];
+//         str[i]=str[n-1-i];
+//         str[n-1-i]=temp;
+//     }
+//     printf("%s\n",str);
+//     return 0;
+// }
+
+
+// reverse using loop
+
+// #include <stdio.h>
+// int main()
+// {
+// char str[]="Madam";
+// int n=0;
+// while(str[n]!='\0')
+// {
+//     n++;
+// }
+// for(int i=n-1; i>=0; i--)
+// {
+//     printf("%c",str[i]);
+// }
+// printf("\n");
+// return 0;
+// }
+
+
+// Word counting
+
+// #include <stdio.h>
+
+// int main()
+// {
+//     char str[]="Madam hi i am here bye";
+//     int count=1;
+//     int n =0;
+//     while(str[n]!='\0')
+//     {
+//         n++;
+//     }
+
+//     for(int i=0; i<n-1; i++){
+//         if(str[i]==' ')
+//         {
+//             count++;
+//         }
+//     }
+//     printf("%d\n",count);
+//     return 0;
+// }
+
+
+// #include <stdio.h>
+
+// int main()
+// {
+//     char str[]="hi bro i brought new bike i am so happy! and hered that you owned new one didn't you?";
+//     int inword=0;
+//     int count = 0;
+
+//     for(int i=0; str[i]!='\0'; i++)
+//     {
+//         if(str[i]!=' ' && inword==0)
+//         {
+//             count++;
+//             inword = 1;
+//         }
+//         else if(str[i]==' ')
+//         {
+
+//             inword = 0;
+//         }
+//     }
+//     printf("%d\n",count);
+//     return 0;
+// }
+
+// Removing Spaces from String (Using Second String)
+
+// #include <stdio.h>
+
+// int main()
+// {
+//   char str[]="Hi buddy how are you!";
+//   char str1[50];
+
+
+//   int j=0;
+
+  
+//   for(int i=0; str[i]!='\0';i++)
+//   {
+//     if(str[i]!=' ')
+//     {
+//         str1[j] = str[i];
+//         j++;
+//     }
+    
+//   }
+//   str[j]='\0';
+
+//   printf("%s\n",str1);
+//   return 0;
+
+// }
+
+// Modify the same string (two indexes)
+
+// #include <stdio.h>
+
+// int main()
+// {
+//     char str[]="hi hello bye!";
+//     int j=0;
+
+//     for(int i=0; str[i]!='\0'; i++)
+//     {
+//         if(str[i]!=' ')
+//         {
+//             str[j]=str[i];
+//             j++;
+//         }
+//     }
+//     str[j]='\0';
+
+//     printf("%s\n",str);
+// }
+
+
+// Using while
+
+// #include <stdio.h>
+
+// int main()
+// {
+//     char str[]="I love my country i am from Indai";
+//     int i=0;
+//     int j=0;
+
+//     while(str[i]!='\0')
+//     {
+//         if(str[i]!=' ')
+//         {
+//             str[j]=str[i];
+//             j++;
+//         }
+//         i++;
+//     }
+//     str[j]='\0';
+//     printf("%s\n",str);
+
+//     return 0;
+    
+// }
