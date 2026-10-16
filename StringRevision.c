@@ -599,3 +599,105 @@
 //     return 0;
     
 // }
+
+
+// #include <stdio.h>
+
+// int main()
+// {
+//     char str[]="Gajanand@1233";
+//     char str1[]="1234567890!@#$%^&*()";
+
+//     int n =0;
+//     int m=0;
+//     int Sym =0;
+
+//     while(str[n]!='\0' && str1[m]!='\0')
+//     {
+//         n++;
+//         m++;
+//     }
+
+//     for(int i=0; i<n; i++)
+//     {
+//         for (int j=0; j<m; j++)
+//         {
+//             if(str[i]==str1[j])
+//             {
+//               Sym++;
+//             }
+//         }
+//     }
+//     printf("%d\n",Sym);
+//     return 0;
+// }
+
+// #include <stdio.h>
+
+// int main()
+// {
+//     char str[]={'{}','[]','()','[]'};
+//     char valid[]={'[[[]]]','{{{}}}','[]','{}','((()))','()'};
+//     int n=0;
+//     int m=0;
+//     int flag =0;
+//     while(str[n]!='\0' && valid[m]!='\0')
+//     {
+//         n++;
+//         m++;
+//     }
+//     for(int i=0; i<n; i++)
+//     {
+//        for(int j=0; j<m; j++)
+//        {
+//         if(str[i]!=str[j])
+//         {
+//             flag = 1;
+//         }
+//        }
+//     }
+
+//     if(flag==1)
+//     {
+//         printf("Not valid\n");
+//     }
+//     else
+//     {
+//         printf("Valid\n");
+//     }
+//     return 0;
+// }
+
+
+// Concatenate two strings
+
+#include <stdio.h>
+
+
+int main()
+{
+    char str1[]="Gajanand ";
+    char str2[]="Immannavar";
+    char result[30];
+
+    int k=0;
+    
+    for(int i=0; str1[i]!='\0'; i++)
+    {
+            result[k++]=str1[i];
+    }
+    
+
+    for(int j=0; str2[j]!='\0'; j++)
+    {   
+          result[k++]=str2[j];
+        
+    }
+    result[k]='\0';
+
+    printf("%s ", result);
+    printf("\n");
+
+    return 0;
+
+}
