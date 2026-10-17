@@ -671,33 +671,100 @@
 
 // Concatenate two strings
 
+// #include <stdio.h>
+
+
+// int main()
+// {
+//     char str1[]="Gajanand ";
+//     char str2[]="Immannavar";
+//     char result[30];
+
+//     int k=0;
+    
+//     for(int i=0; str1[i]!='\0'; i++)
+//     {
+//             result[k++]=str1[i];
+//     }
+    
+
+//     for(int j=0; str2[j]!='\0'; j++)
+//     {   
+//           result[k++]=str2[j];
+        
+//     }
+//     result[k]='\0';
+
+//     printf("%s ", result);
+//     printf("\n");
+
+//     return 0;
+
+// }
+
+// Space removing frm string copying charester excluding space
+
+
+
+// #include <stdio.h>
+// int main()
+// {
+//     char str[]="Gajanand Immannavar";
+//     int j=0;
+
+//     for(int i=0; str[i]!='\0'; i++)
+//     {
+//         if(str[i]!=' ')
+//         {
+//             str[j]=str[i];
+//             j++;
+//         }
+//     }
+//     str[j]='\0';
+//     printf("%s\n",str);
+//     return 0;
+// }
+
+
+// Shifting charster left when reaching space
+
+// #include <stdio.h>
+// int main()
+// {
+//     char str[]="Gajanand l Immannavar";
+//     for(int i=0; str[i]!='\0';i++)
+//     {
+//         if(str[i]==' ')
+//         {
+//             for(int j=i; str[j]!='\0'; j++)
+//             {
+//                 str[j]=str[j+1];
+//             }
+//             i--;
+//         }
+//     }
+//     printf("%s\n",str);
+//     return 0;
+// }
+
+
+// Reverse word in sentence
+
 #include <stdio.h>
 
-
 int main()
+
 {
-    char str1[]="Gajanand ";
-    char str2[]="Immannavar";
-    char result[30];
-
-    int k=0;
-    
-    for(int i=0; str1[i]!='\0'; i++)
+    char str[]="Gajanand L Immannavar";
+    for(int i=0; str[i]!='\0'; i++)
     {
-            result[k++]=str1[i];
+        if(str[i]==' ')
+        {
+          char temp = str[i];
+          str[i] = str[-i];
+          str[-i] = temp;
+        }
     }
-    
-
-    for(int j=0; str2[j]!='\0'; j++)
-    {   
-          result[k++]=str2[j];
-        
-    }
-    result[k]='\0';
-
-    printf("%s ", result);
-    printf("\n");
-
+    printf("%s\n",str);
     return 0;
-
 }
