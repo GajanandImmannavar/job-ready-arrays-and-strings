@@ -750,21 +750,58 @@
 
 // Reverse word in sentence
 
+
 #include <stdio.h>
 
 int main()
-
 {
-    char str[]="Gajanand L Immannavar";
-    for(int i=0; str[i]!='\0'; i++)
+    char str[] = "Gajanand L Immannavar";
+    int n = 0;
+
+    while(str[n] != '\0')
     {
-        if(str[i]==' ')
+        n++;
+    }
+
+    // Step 1: Reverse the entire string
+    int left = 0;
+    int right = n - 1;
+
+    while(left < right)
+    {
+        char temp = str[left];
+        str[left] = str[right];
+        str[right] = temp;
+
+        left++;
+        right--;
+    }
+
+    // Step 2: Reverse each word
+    int start = 0;
+
+    for(int i = 0; i <= n; i++)
+    {
+        if(str[i] == ' ' || str[i] == '\0')
         {
-          char temp = str[i];
-          str[i] = str[-i];
-          str[-i] = temp;
+            int l = start;
+            int r = i - 1;
+
+            while(l < r)
+            {
+                char temp = str[l];
+                str[l] = str[r];
+                str[r] = temp;
+
+                l++;
+                r--;
+            }
+
+            start = i + 1;
         }
     }
-    printf("%s\n",str);
+
+    printf("%s\n", str);
+
     return 0;
 }
